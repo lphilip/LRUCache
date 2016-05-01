@@ -1,5 +1,6 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
+#include <stdlib.h>
+
 
 #define SIZE 10
 
@@ -12,10 +13,10 @@ typdef struct node
 
 typdef struct queue
 {
-	int number;
+	int count;
+	int total_count;
 	Qnode* head;
 	Qnode* tail;
-	Qnode* node;
 }Queue;
 
-Map<int, Qnode*> hashmap.reserve(SIZE);
+Qnode* hashmap[SIZE] = NULL;
